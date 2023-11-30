@@ -1,0 +1,118 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+   background-color: #217bf184;
+}
+
+.wrapper {
+   flex-grow: 1;
+}
+
+.form {
+   max-width: 350px;
+   margin: 50px auto 0;
+   padding: 20px;
+   background: #b3d8ffcf;
+   font-family: 'Oswald', sans-serif;
+   border-radius: 6px;
+}
+
+.form h3 {
+   padding: 7px;
+   margin-bottom: 20px;
+   font-size: 16px;
+   text-align: center;
+   line-height: 1;
+   text-transform: uppercase;
+   color: #22211f;
+   background: #7a9eeccc;
+   border-radius: 4px;
+   box-shadow: 01px 0px 3px #7a9eeccc;
+}
+
+.form__group {
+   margin-bottom: 20px;
+   padding: 10px;
+   background: #7a9eeccc;
+   border-radius: 4px;
+   box-shadow: 01px 0px 3px #7a9eeccc;
+}
+
+.form__group input,
+.form__group label,
+.form__group textarea {
+   display: block;
+   width: 100%;
+}
+
+.form__group input {
+   padding: 0 10px;
+   line-height: 30px;
+   background: #e9f0f7cf;
+   border-width: 0;
+   margin-bottom: 10px;
+   border-radius: 3px;
+   box-shadow: 0 0 3px #e9f0f7cf;
+   outline: none;
+   transition: box-shadow 0.4s ease;
+}
+
+.form__group input:hover {
+   box-shadow: 0 0 7px #51519bcf;
+}
+
+.form__group input:focus {
+   box-shadow: 0 0 7px #51519bcf;
+}
+
+.form__group label {
+   margin-bottom: 5px;
+   color: #22211f;
+   text-transform: uppercase;
+   font-size: 12px;
+}
+
+.form__submit-button {
+   display: inline-block;
+   width: 100%;
+   padding: 5px 10px;
+   text-align: center;
+   background: #7a9eeccc;
+   box-shadow: 01px 0px 3px #7a9eeccc;
+   border-radius: 4px;
+   transition: box-shadow 0.4s ease;
+}
+
+.form__submit-button:hover {
+   box-shadow: 0 0 6px #5e8ae8cc;
+}
+
+.form__submit-button button {
+   padding: 0;
+   background: transparent;
+   border-width: 0;
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.form__send-result {
+   padding: 10px 10px 0 10px;
+   text-align: center;
+   font-size: 12px;
+   color: green;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="" />
+      <title>Send to Telegram</title>
+      <link rel="stylesheet" href="./style/style.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <form class="form" onsubmit="sendEmailTelegram(event)">
+            <h3>Passenger information</h3>
+            <div class="form__group">
+               <label for="name">Name</label>
+               <input
+                  type="text"
+                  name="name"
+                  autocomplete="off"
+                  maxlength="50"
+                  required />
+
+               <label for="pass">Passport data</label>
+               <input
+                  type="text"
+                  name="pass"
+                  autocomplete="off"
+                  maxlength="50"
+                  required />
+
+               <label for="email">Email</label>
+               <input
+                  type="email"
+                  name="email"
+                  autocomplete="off"
+                  maxlength="50"
+                  required />
+
+               <label for="phone">Phone number</label>
+               <input
+                  type="tel"
+                  name="phone"
+                  autocomplete="off"
+                  maxlength="15"
+                  required />
+            </div>
+            <div class="form__submit-button">
+               <button type="submit">Send Request</button>
+            </div>
+            <div class="form__send-result"></div>
+         </form>
+      </div>
+      <script src="./js/index.js"></script>
+   </body>
+</html>
